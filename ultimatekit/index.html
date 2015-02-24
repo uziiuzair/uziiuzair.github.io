@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<title>The Ultimate Designers Kit</title>
+	
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" id="switcher" href="designerskit.css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+			  $("#css-switch").click(function() {
+			  	if ( $("#switcher").attr('href') == 'designerskit.css' ) {
+			    	$("#switcher").attr({href : "none.css"});
+			    	$('#css-switch').text('Turn CSS On');
+			    } else {
+			    	$("#switcher").attr({href : "designerskit.css"});
+			    	$('#css-switch').text('Turn CSS Off');
+			    }
+			  });
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.readmore').click(function(){
+				    $(this).animate({height: '120px'}, 200);
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+	
+				$('ul.tabs li').click(function(){
+					var tab_id = $(this).attr('data-tab');
+
+					$('ul.tabs li').removeClass('current');
+					$('.tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				});
+
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+	
+				$('ul.tabs li').click(function(){
+					var tab_id = $(this).attr('data-tab');
+
+					$('ul.tabs li').removeClass('current');
+					$('.tab-content').removeClass('current');
+
+					$(this).addClass('current');
+					$("#"+tab_id).addClass('current');
+				});
+
+			});
+		</script>
+
+	</head>
+	
+	<body>
+
+		<div class="cssControl">
+			<a href="#" id="css-switch">Turn CSS Off</a>
+		</div>
+
+		<div class="header">
+			<div class="title">
+				<h1>Ultimate Designers Kit</h1>
+			</div>
+			<div class="links">
+				<nav>
+					<ul>
+						<li><a href="http://www.facebook.com/uziihayat">Facebook</a></li>
+						<li><a href="http://www.twitter.com/uziiuzair">Twitter</a></li>
+						<li><a href="https://github.com/uziiuzair/Ultimate-Designers-Kit/archive/master.zip">Download ZIP</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container">
+
+			<div class="section">
+				<div class="span12">
+
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				</div>
+				<div class="span12">
+
+					<div class="span3">
+						
+						<ul>
+							<li>List Item
+								<ul>
+									<li>Child List Item</li>
+									<li>Child List Item</li>
+									<li>Child List Item</li>
+								</ul>
+							</li>
+							<li>List Item</li>
+							<li>List Item</li>
+							<li>List Item</li>
+						</ul>
+
+					</div>
+					<div class="span3">
+						
+						<ol>
+							<li>List Item
+								<ol>
+									<li>Child List Item</li>
+									<li>Child List Item</li>
+									<li>Child List Item</li>
+								</ol>
+							</li>
+							<li>List Item</li>
+							<li>List Item</li>
+							<li>List Item</li>
+						</ol>
+
+					</div>
+
+					<div class="span6">
+						
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						</blockquote>
+						
+					</div>
+
+				</div>
+
+				<div class="span12">
+					
+					<p class="dropcaps">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in <span class="highlight">reprehenderit in voluptate</span> velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut <span class="highlight">labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt <span class="highlight">mollit</span> anim id est laborum.</p>
+					<hr>
+					<p>You can display tooltips too! Tooltips can be displayed at the <a href="#" class="tooltip-top">TOP<span>Tooltip</span></a>, <a href="#" class="tooltip-bottom">BOTTOM<span>Tooltip</span></a>, <a href="#" class="tooltip-left">LEFT<span>Tooltip</span></a>, <a href="#" class="tooltip-right">RIGHT<span>Tooltip</span></a> :)</p>
+				</div>
+
+				<div class="span12">
+
+					<div class="span6">
+						
+						<input type="text" placeholder="Text">
+						<input type="url" placeholder="URL">
+						<input type="email" placeholder="E-Mail">
+						<input type="number" placeholder="Number">
+						<input type="password" placeholder="Password">
+						<input type="password" placeholder="Disabled" disabled>
+
+					</div>
+					
+					<div class="span6">
+						<textarea placeholder="Text Area"></textarea>
+						<select size="2">
+							<option>Options 1</option>
+							<option>Options 2</option>
+							<option>Options 3</option>
+							<option>Options 4</option>
+						</select>
+						<select class="drop">
+							<option>Options 1</option>
+							<option>Options 2</option>
+							<option>Options 3</option>
+							<option>Options 4</option>
+						</select>
+					</div>
+
+					<div class="span12">
+						<button class="btn style1">Button 1</button>
+						<button class="btn style2">Button 2</button>
+						<button class="btn style3">Button 3</button>
+						<button class="btn style4">Button 4</button>
+						<button class="btn style5">Button 5</button>
+					</div>
+					
+					<div class="span12">
+						
+						<div class="notice info">
+							<i class="fa fa-info"></i>
+							<p>Information Notice</p>
+						</div>
+						
+						<div class="notice global">
+							<i class="fa fa-globe"></i>
+							<p>Global Notice</p>
+						</div>
+						
+						<div class="notice help">
+							<i class="fa fa-support"></i>
+							<p>Support Notice</p>
+						</div>
+						
+						<div class="notice pin">
+							<i class="fa fa-thumb-tack"></i>
+							<p>A Pinned Notice</p>
+						</div>
+						
+						<div class="notice attention">
+							<i class="fa fa-warning"></i>
+							<p>Attention Notice</p>
+						</div>
+						
+						<div class="notice idea">
+							<i class="fa fa-lightbulb-o"></i>
+							<p>An Idea Notice</p>
+						</div>
+
+					</div>
+
+					<div class="span12">
+						
+						<div class="notice bg info">
+							<i class="fa fa-info"></i>
+							<p>Information Notice</p>
+						</div>
+						
+						<div class="notice bg global">
+							<i class="fa fa-globe"></i>
+							<p>Global Notice</p>
+						</div>
+						
+						<div class="notice bg help">
+							<i class="fa fa-support"></i>
+							<p>Support Notice</p>
+						</div>
+						
+						<div class="notice bg pin">
+							<i class="fa fa-thumb-tack"></i>
+							<p>A Pinned Notice</p>
+						</div>
+						
+						<div class="notice bg attention">
+							<i class="fa fa-warning"></i>
+							<p>Attention Notice</p>
+						</div>
+						
+						<div class="notice bg idea">
+							<i class="fa fa-lightbulb-o"></i>
+							<p>An Idea Notice</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="span12">
+					<div class="span span12"><p>Span 12</p></div>
+					<div class="span span11"><p>Span 11</p></div><div class="offset offset1"><p>Offset 1</p></div>
+					<div class="span span10"><p>Span 10</p></div><div class="offset offset2"><p>Offset 2</p></div>
+					<div class="span span9"><p>Span 9</p></div><div class="offset offset3"><p>Offset 3</p></div>
+					<div class="span span8"><p>Span 8</p></div><div class="offset offset4"><p>Offset 4</p></div>
+					<div class="span span7"><p>Span 7</p></div><div class="offset offset5"><p>Offset 5</p></div>
+					<div class="span span6"><p>Span 6</p></div><div class="offset offset6"><p>Offset 6</p></div>
+					<div class="span span5"><p>Span 5</p></div><div class="offset offset7"><p>Offset 7</p></div>
+					<div class="span span4"><p>Span 4</p></div><div class="offset offset8"><p>Offset 8</p></div>
+					<div class="span span3"><p>Span 3</p></div><div class="offset offset9"><p>Offset 9</p></div>
+					<div class="span span2"><p>Span 2</p></div><div class="offset offset10"><p>Offset 10</p></div>
+					<div class="span span1"><p>Span 1</p></div><div class="offset offset11"><p>Offset 11</p></div>
+				</div>
+			</div>
+
+
+
+			<div class="section">
+				
+				<div class="span12">
+
+					<nav class="navigation">
+						<ul>
+							<li><a href="#"><i class="fa fa-home"></i></a></li>
+							<li><a href="#">Single Dropdown</a>
+								<ul>
+									<li><a href="#">Dropdown Item</a></li>
+									<li><a href="#">Dropdown Item</a></li>
+									<li><a href="#">Dropdown Item</a>
+										<ul>
+											<li><a href="#">Dropdown Item</a></li>
+											<li><a href="#">Dropdown Item</a></li>
+											<li><a href="#">Dropdown Item</a></li>
+											<li><a href="#">Dropdown Item</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Dropdown Item</a></li>
+									<li><a href="#">Dropdown Item</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Mega Menu</a>
+
+								<div class="mega">
+									
+									<div class="span12">
+										<div class="span span6"><p>Span 6</p></div><div class="offset offset6"><p>Offset 6</p></div>
+										<div class="span span5"><p>Span 5</p></div><div class="offset offset7"><p>Offset 7</p></div>
+										<div class="span span4"><p>Span 4</p></div><div class="offset offset8"><p>Offset 8</p></div>
+										<div class="span span3"><p>Span 3</p></div><div class="offset offset9"><p>Offset 9</p></div>
+										<div class="span span2"><p>Span 2</p></div><div class="offset offset10"><p>Offset 10</p></div>
+										<div class="span span1"><p>Span 1</p></div><div class="offset offset11"><p>Offset 11</p></div>
+									</div>
+									<div class="span2">
+										<header>
+											<h4>Some Title</h4>
+										</header>
+										<ul>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+										</ul>
+									</div>
+									<div class="span2">
+										<header>
+											<h4>Some Title</h4>
+										</header>
+										<ul>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+										</ul>
+									</div>
+									<div class="span2">
+										<header>
+											<h4>Some Title</h4>
+										</header>
+										<ul>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+											<li><a href="#">Some Item Here</a></li>
+										</ul>
+									</div>
+									<div class="offset4">
+										<header>
+											<h4>Add Images</h4>
+										</header>
+										<img src="http://www.lumbinipeacetravels.com.np/galley/pokhara-sightseeing2.jpg" alt="">
+									</div>
+
+								</div>
+
+							</li>
+							<li><a href="#">Login</a>
+								<ul class="form">
+									
+									<form>
+										
+										<label>User:</label>
+										<input type="text" placeholder="Username/E-Mail" name="username" required>
+										<label>Password:</label>
+										<input type="password" placeholder="Password" name="pass" required>
+										<a href="#">Forgot Your Password?</a>
+										<button>Login</button>
+
+									</form>
+
+								</ul>
+							</li>
+							<li><a href="#">Gallery</a>
+
+								<div class="mega gallery">
+
+									<div class="span4">
+										<img src="http://www.lumbinipeacetravels.com.np/galley/pokhara-sightseeing2.jpg" alt="">
+										<h5>Title</h5>
+									</div>
+
+									<div class="span4">
+										<img src="http://cdn.indiatourism4u.in/images/9755gal.jpg" alt="">
+										<h5>Title</h5>
+									</div>
+									
+									<div class="span4">
+										<img src="http://www.pondercove.com/wp-content/uploads/2010/07/Royce3.jpg" alt="">
+										<h5>Title</h5>
+									</div>
+
+									<div class="span12">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								
+								</div>
+
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+			</div>
+			
+			
+			<div class="section">
+			
+				<div class="span6">
+					
+					<div class="readmore">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+
+				</div>
+
+				<div class="span6">
+					<p>Spoiler Text <strong>(Hover Below)</strong></p>
+					<p class="spoiler">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			
+			</div>
+
+
+			<div class="section">
+				
+				<div class="span4">
+					
+					<div class="imageHover style1">
+						
+						<img src="http://www.lumbinipeacetravels.com.np/galley/pokhara-sightseeing2.jpg">
+
+						<div class="overlay">
+							
+							<h2>Style One</h2>
+							<p>Some text about Style One</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="span4">
+					
+					<div class="imageHover style2">
+						
+						<img src="http://cdn.indiatourism4u.in/images/9755gal.jpg">
+
+						<div class="overlay">
+							
+							<h2>Style Two</h2>
+							<p>Some text about Style Two</p>
+
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="span4">
+					
+					<div class="imageHover style3">
+						
+						<img src="http://www.pondercove.com/wp-content/uploads/2010/07/Royce3.jpg">
+
+						<div class="overlay">
+							
+							<h2>Style Three</h2>
+							<p>Some text about Style Three</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="section">
+				
+				<div class="span2"><br></div>
+				<div class="span8">
+					<a class="btn style1" href="#modal-center">Modal 1</a>
+					<a class="btn style1" href="#modal-left">Modal 2</a>
+					<a class="btn style1" href="#modal-right">Modal 3</a>
+					<a class="btn style1" href="#modal-top-left">Modal 4</a>
+					<a class="btn style1" href="#modal-top-right">Modal 5</a>
+					<a class="btn style1" href="#modal-bottom-left">Modal 6</a>
+					<a class="btn style1" href="#modal-bottom-right">Modal 7</a>
+				</div>
+				<div class="span2"><br></div>
+				<div class="span12">
+					<div class="modal-center" id="modal-center">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+					<div class="modal-left" id="modal-left">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+					<div class="modal-right" id="modal-right">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+					<div class="modal-top-left" id="modal-top-left">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+					<div class="modal-top-right" id="modal-top-right">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+					<div class="modal-bottom-left" id="modal-bottom-left">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+					<div class="modal-bottom-right" id="modal-bottom-right">
+						<div class="modal-box">
+							<a href="#close" class="close">X</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<!-- Pricing Tables -->
+			<div class="section">
+				
+				<div class="span12">
+					
+					<div class="pricingGrid">
+
+						<div class="pricingCol details">
+							<div class="rowHead">
+								
+								<p>You can add some random text over here :)</p>
+
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+							<div class="row">
+								<p>Some Item</p>
+							</div>
+						</div>
+
+						<div class="pricingCol plan">
+							<div class="rowHead">
+								
+								<h2>Standard</h2>
+								<span>$14/yr</span>
+
+								<button>Buy Now</button>
+
+							</div>
+							<div class="row">
+								<p>1</p>
+							</div>
+							<div class="row">
+								<p>1</p>
+							</div>
+							<div class="row">
+								<p>2</p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-times"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-times"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-times"></i></p>
+							</div>
+						</div>
+
+						<div class="pricingCol plan bestBuy">
+							<div class="rowHead">
+								
+								<h2>Professional</h2>
+								<span>$24/yr</span>
+
+								<button>Buy Now</button>
+
+							</div>
+							<div class="row">
+								<p>4</p>
+							</div>
+							<div class="row">
+								<p>4</p>
+							</div>
+							<div class="row">
+								<p>10</p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-times"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-times"></i></p>
+							</div>
+						</div>
+
+						<div class="pricingCol plan">
+							<div class="rowHead">
+								
+								<h2>Business</h2>
+								<span>$30/yr</span>
+
+								<button>Buy Now</button>
+
+							</div>
+							<div class="row">
+								<p>10</p>
+							</div>
+							<div class="row">
+								<p>10</p>
+							</div>
+							<div class="row">
+								<p>Unlimited</p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+							<div class="row">
+								<p><i class="fa fa-check"></i></p>
+							</div>
+						</div>
+
+					
+					</div>
+
+				</div>
+
+
+			</div>
+
+
+			<!-- Tabbed Content -->
+			<div class="section">
+				
+				<div class="span12">
+
+					<div class="tab">
+						
+						<ul class="tabs">
+							<li class="tab-link current" data-tab="tab-1">Tab 1</li>
+							<li class="tab-link" data-tab="tab-2">Tab 2</li>
+							<li class="tab-link" data-tab="tab-3">Tab 3</li>
+							<li class="tab-link" data-tab="tab-4">Tab 4</li>
+						</ul>
+
+						<div class="tab-content current" id="tab-1">
+							<p>Tab 1 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="tab-content" id="tab-2">
+							<p>Tab 2 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="tab-content" id="tab-3">
+							<p>Tab 3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						<div class="tab-content" id="tab-4">
+							<p>Tab 4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+
+					</div>
+				
+				</div>
+
+
+			</div>
+
+
+			<div class="section">
+				
+				<!-- Accordion -->
+				<div class="span6">
+					
+					<h2 class="flat">Accordion</h2>
+
+					<div class="accordion">
+						
+						<ul class="accordionElement">
+							<li><a>Elements</a>
+								<ul>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+								</ul>
+							</li>
+							<li><a>Elements</a>
+								<ul>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+								</ul>
+							</li>
+							<li><a>Elements</a>
+								<ul>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+								</ul>
+							</li>
+							<li><a>Elements</a>
+								<ul>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+									<li><a href="#">Inner Element</a></li>
+								</ul>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<!-- Progress Bars -->
+				<div class="span6">
+
+					<h2 class="flat">Progress Bars</h2>
+					
+					<div class="progressBar style1"><span style="width:50%;"><div class="bar"></div></span></div>
+					<div class="progressBar style2"><span style="width:86%;"><div class="bar"></div></span></div>
+					<div class="progressBar style3"><span style="width:40%;"></span></div>
+
+				</div>
+			</div>
+
+
+			<div class="section">
+				
+				<div class="span6">
+					
+					<h2 class="flat">Pagination</h2>
+
+					<div class="pagination style1">
+						<a href="#" class="first">Prev</a>
+
+						<div class="num">
+							
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li class="current"><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">6</a></li>
+								<li><a href="#">7</a></li>
+								<li><a href="#">...</a></li>
+								<li><a href="#">9</a></li>
+							</ul>
+
+						</div>
+
+						<a href="#" class="last">Next</a>
+					</div>
+
+					<div class="pagination style2">
+						
+						<a href="#">Prev</a>
+						<a href="#">Next</a>
+
+						<p>Page <span>1</span>/2</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript">
+			$(".accordionElement li > a").click(function(){
+			 
+			    if(false == $(this).next().is(':visible')) {
+			        $('.accordionElement li ul').slideUp(300);
+			    }
+			    $(this).next().slideToggle(300);
+
+			});
+        </script>
+
+	</body>
+
+</html>
